@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: brown;
@@ -38,4 +42,84 @@ p {
 
 .non-veg {
     color: red;
+}
+
+footer {
+    position: relative;
+}
+
+.circle {
+    background-color: #394727;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transform: translateX(1px);
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #394727;
+    position: relative;
+    z-index: 1;
+    margin-top: 3vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.square img {
+    object-fit: contain;
+    width: 10%;
+    height: 5%;
+    margin-top: 60px;
+}
+
+@media (min-width: 1024px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .square img {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 845px) and (max-width: 1023.99px) {
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .square img {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 844.99px) {
+    .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .square img {
+        margin-top: 40px;
+    }
 }
