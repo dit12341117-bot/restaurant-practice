@@ -78,17 +78,95 @@ footer {
     position: relative;
     z-index: 1;
     margin-top: 3vw;
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.square img {
-    object-fit: contain;
-    width: 10%;
-    height: 5%;
-    margin-top: 60px;
+.square-item1 {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.square-item2 {
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+    position: relative;
+}
+
+.square-item2::before,
+.square-item2::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 1%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: #d1ba9c;
+}
+
+.square-item2::before {
+    left: 0;
+}
+
+.square-item2::after {
+    right: 0;
+}
+
+.square-item3 {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.square-item2 p {
+    margin: 5vh 0 0 0;
+    font-family: 'Bree Serif', serif;
+    font-size: 550%;
+    color: #d1ba9c;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.p1 {
+    margin: 0;
+    transform: translateY(-20px);
+    font-family: 'Bree Serif', serif;
+    font-size: 100%;
+    color: #d1ba9c;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.p2 {
+    margin: 0;
+    transform: translateY(-20px);
+    font-family: 'Playfair Display', serif;
+    font-size: 80%;
+    color: #d1ba9c;
+    letter-spacing: 2px;
+}
+
+.website-info {
+    width: 100%;
+    min-height: 70px;
+    background-color: black;
+    font-family: 'Bree Serif', serif;
+    color: #d1ba9c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 3vw;
+    box-sizing: border-box;
+}
+
+.website-info-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 1vw;
+    font-size: 14px;
 }
 
 @media (min-width: 1024px) {
@@ -122,4 +200,18 @@ footer {
     .square img {
         margin-top: 40px;
     }
+
+    .website-info {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 5vw;
+    }
+
+    .website-info-item {
+        width: 100%;
+        padding: 0;
+        font-size: 12px;
+    }
+
 }
