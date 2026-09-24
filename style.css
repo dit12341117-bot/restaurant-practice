@@ -84,8 +84,100 @@ footer {
 }
 
 .square-item1 {
-    padding-right: 10%;
-    padding-left: 10%;
+    margin-right: 4%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.update-text {
+    font-family: 'Bree Serif', serif;
+    font-size: 150%;
+    font-weight: 500;
+    color: #d1ba9c;
+    margin-bottom: 4%;
+    white-space: nowrap;
+}
+
+.main {
+    transform: translateY(-15px);
+}
+
+.p3 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 100%;
+    color: #d1ba9c;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2%;
+}
+
+.social-icons a {
+    color: #d1ba9c;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.stay-updatedplace {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(-10px);
+}
+
+.subscribe input {
+    width: 300px;
+    height: 45px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #d1ba9c;
+    border: 2px solid #394727;
+    border-radius: 5px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 14px;
+    color: #394727;
+    outline: none;
+}
+
+.subscribe input::placeholder {
+    color: #394727;
+    opacity: 0.9;
+}
+
+.subscribe button {
+    height: 45px;
+    padding: 0 20px;
+
+    background-color: transparent;
+    border: 2px solid #d1ba9c;
+    border-radius: 4px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 14px;
+    color: #d1ba9c;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #d1ba9c;
+    color: #394727;
 }
 
 .square-item2 {
@@ -101,7 +193,7 @@ footer {
     position: absolute;
     top: 30%;
     width: 1%;
-    height: 60%;
+    height: 100%;
     border-radius: 10px;
     background-color: #d1ba9c;
 }
@@ -115,8 +207,8 @@ footer {
 }
 
 .square-item3 {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 15%;
+    padding-left: 12%;
 }
 
 .square-item2 p {
@@ -142,7 +234,7 @@ footer {
     margin: 0;
     transform: translateY(-20px);
     font-family: 'Playfair Display', serif;
-    font-size: 80%;
+    font-size: 100%;
     color: #d1ba9c;
     letter-spacing: 2px;
 }
