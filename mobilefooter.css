@@ -1,53 +1,3 @@
-body {
-    margin: 0;
-}
-
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: brown;
-}
-
-h2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: darkgreen;
-}
-
-h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: navy;
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.menu-header {
-    font-family: 'Arial Black', Gadget, sans-serif;
-    color: darkorange;
-}
-
-.menu-subheader {
-    font-family: 'Arial Black', Gadget, sans-serif;
-    color: darkblue;
-}
-
-.menu-caption {
-    font-family: 'Arial Black', Gadget, sans-serif;
-    color: darkmagenta;
-}
-
-.veg {
-    color: green;
-}
-
-.non-veg {
-    color: red;
-}
-
-footer {
-    position: relative;
-}
-
 .circle {
     background-color: #394727;
     border-radius: 50%;
@@ -89,12 +39,10 @@ footer {
 
 .square-item1 {
     grid-area: item1;
-    margin: 18% 4% 0 3%;
 }
 
 .whats-new {
     font-family: 'Bree Serif', serif;
-    font-size: clamp(18px, 1.5vw, 24px);
     font-weight: 500;
     color: #d1ba9c;
     margin-bottom: 4%;
@@ -169,30 +117,10 @@ footer {
     box-sizing: border-box;
 }
 
-/* ::before / ::after ONLY on desktop & tablet */
-.square-item2::before,
-.square-item2::after {
-    content: "";
-    position: absolute;
-    top: 30%;
-    width: 1%;
-    height: 65%;
-    border-radius: 10px;
-    background-color: #d1ba9c;
-}
-
-.square-item2::before {
-    left: 0;
-}
-
-.square-item2::after {
-    right: 0;
-}
-
 .square-item2 p {
-    margin: 3vh 0 0 0;
+    margin: 0.5vh 0 0 0;
     font-family: 'Bree Serif', serif;
-    font-size: clamp(55px, 7.5vw, 110px);
+    font-size: clamp(75px, 12vw, 150px);
     color: #d1ba9c;
     font-weight: bold;
     letter-spacing: 2px;
@@ -202,7 +130,7 @@ footer {
     margin: 0;
     transform: translateY(-15px);
     font-family: 'Bree Serif', serif;
-    font-size: clamp(12px, 1vw, 16px);
+    font-size: clamp(16px, 2vw, 20px);
     color: #d1ba9c;
     font-weight: bold;
     letter-spacing: 2px;
@@ -212,7 +140,7 @@ footer {
     margin: 0;
     transform: translateY(-18px);
     font-family: 'Playfair Display', serif;
-    font-size: clamp(12px, 1vw, 16px);
+    font-size: clamp(16px, 2vw, 20px);
     color: #d1ba9c;
     letter-spacing: 2px;
 }
@@ -235,7 +163,6 @@ footer {
     opacity: 0.7;
 }
 
-/* Dividers hidden on desktop & tablet */
 .mobile-divider {
     display: none;
 }
@@ -245,8 +172,7 @@ footer {
     margin: 18% 3% 0 4%;
 }
 
-.quick-link-text,
-.contact-text {
+.quick-link-text {
     font-family: 'Bree Serif', serif;
     font-size: clamp(18px, 1.5vw, 24px);
     font-weight: 500;
@@ -256,24 +182,13 @@ footer {
 }
 
 .contact-text {
+    font-family: 'Bree Serif', serif;
+    font-size: clamp(18px, 1.5vw, 24px);
+    font-weight: 500;
+    color: #d1ba9c;
     margin-bottom: 2%;
     transform: translateY(-10px);
-}
-
-/* Desktop/tablet: headings are plain text, no button look */
-.quick-link-text,
-.contact-text {
-    border: none;
-    padding: 0;
-    text-align: left;
-    cursor: default;
-    width: auto;
-    display: inline;
-}
-
-.quick-link-text span,
-.contact-text span {
-    display: none;
+    background-color: transparent;
 }
 
 .square-item3 a {
@@ -289,11 +204,15 @@ footer {
     color: black;
 }
 
+.quick-link-text span,
+.contact-text span {
+    display: none;
+}
+
 .quick-links,
 .contact-links {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px;
 }
 
@@ -319,86 +238,7 @@ footer {
     font-size: 14px;
 }
 
-/* ============ DESKTOP (>= 1024px) ============ */
-@media (min-width: 1024px) {
-    .circle {
-        width: 100px;
-        height: 100px;
-    }
-
-    .square img {
-        margin-top: 60px;
-    }
-
-    .subscribe-content {
-        transform: translateY(-15px);
-    }
-
-    .subscribe-box {
-        align-items: center;
-    }
-
-    .subscribe-box input {
-        width: 70%;
-        max-width: 300px;
-        min-width: 0;
-        height: 50px;
-    }
-
-    .subscribe-box button {
-        width: 30%;
-        max-width: 120px;
-        min-width: 0;
-        height: 50px;
-    }
-
-    .quick-links {
-        transform: translateY(-20px);
-    }
-}
-
-/* ============ TABLET (845px - 1023px) ============ */
-@media (min-width: 845px) and (max-width: 1023.99px) {
-    .circle {
-        width: 80px;
-        height: 80px;
-    }
-
-    .square img {
-        margin-top: 45px;
-    }
-
-    .subscribe-content {
-        transform: translateY(-10px);
-    }
-
-    .subscribe-box {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
-    }
-
-    .subscribe-box input {
-        width: 100%;
-        max-width: none;
-        height: 30px;
-    }
-
-    .subscribe-box button {
-        width: 50%;
-        max-width: none;
-        height: 30px;
-    }
-
-    .quick-links {
-        transform: translateY(-13px);
-    }
-}
-
-/* ============ MOBILE (<= 844px) ============ */
 @media (min-width: 320px) and (max-width: 844.99px) {
-
-    /* Logo smaller on mobile */
     .circle {
         width: 70px;
         height: 70px;
@@ -408,7 +248,6 @@ footer {
         margin-top: 40px;
     }
 
-    /* Collapse to single column, logo first */
     .square {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -421,7 +260,6 @@ footer {
         align-content: start;
     }
 
-    /* Dividers visible ONLY on mobile */
     .mobile-divider {
         display: block;
         width: 95%;
@@ -439,17 +277,10 @@ footer {
         grid-area: divider2;
     }
 
-    /* Remove the side lines on mobile */
-    .square-item2::before,
-    .square-item2::after {
-        display: none;
-    }
-
     .square-item1 {
         margin: 0 4% 0 3%;
     }
 
-    /* Bigger fonts on mobile */
     .whats-new {
         font-size: clamp(24px, 4.5vw, 28px);
         transform: translateY(-5px);
@@ -458,18 +289,6 @@ footer {
     .subscribe-text {
         font-size: clamp(16px, 2.5vw, 20px);
         transform: translateY(-15px);
-    }
-
-    .square-item2 p {
-        font-size: clamp(75px, 12vw, 150px);
-    }
-
-    .since-2025 {
-        font-size: clamp(16px, 2vw, 20px);
-    }
-
-    .tag-line {
-        font-size: clamp(16px, 2vw, 20px);
     }
 
     .subscribe-box {
@@ -495,7 +314,7 @@ footer {
         margin: 0% 3% 4% 4%;
     }
 
-    /* Dropdown headings on mobile */
+    /* Dropdown headings */
     .quick-link-text,
     .contact-text {
         width: 100%;
@@ -511,14 +330,14 @@ footer {
         transform: translateY(5px);
     }
 
-    /* Show arrows on mobile */
+    /* Show arrows */
     .quick-link-text span,
     .contact-text span {
         display: inline;
         font-size: 12px;
     }
 
-    /* Hide content initially on mobile */
+    /* Hide content initially */
     .quick-links,
     .contact-links {
         display: none;
@@ -547,4 +366,5 @@ footer {
         padding: 0;
         font-size: 12px;
     }
+
 }
